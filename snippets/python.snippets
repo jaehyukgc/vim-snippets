@@ -458,3 +458,30 @@ snippet numeric "methods for emulating a numeric type" b
 	def __coerce__(self, other):
 		${25:pass}
 
+
+snippet docn
+	"""${1:Description}
+
+	Parameters
+	----------
+	$2 : ${3:type}
+	${4:descrition}
+
+	Returns, Attributes, Raises, Note etc
+	-------
+
+	"""
+snippet defn
+	def ${1:fname}(indent('.') ? 'self' : '', ${2:param1}):
+	"""${5:TODO docstring for $1}
+
+	Parameters
+	----------
+	$2 : ${3:type}
+	${4:descrition}
+
+	Returns, Attributes, Raises, Note etc
+	-------
+
+	"""
+	${0}
